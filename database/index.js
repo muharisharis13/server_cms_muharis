@@ -1,6 +1,7 @@
 const mongoose = require("mongoose")
+require("dotenv").config();
 
-const koneksi = process.env.DB_CONNECTION //===> Link koneksi mongoose
+const koneksi = `mongodb+srv://muharis:muharis@officia.m7i2l.mongodb.net/jualan_emak`
 
 mongoose.connect(koneksi, {
   useUnifiedTopology : true,
